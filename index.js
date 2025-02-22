@@ -30,7 +30,7 @@ const checkAdminDomain = (req, res, next) => {
   if (isAdminDomain) {
     next();
   } else {
-    res.status(403).json({ error: 'Access denied. Admin domain required.' });
+    res.status(403).json({ error: 'Access denied.' });
   }
 };
 
